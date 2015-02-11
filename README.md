@@ -12,6 +12,7 @@ A live version of this code challenge can be viewed <a href="http://norrishung.c
 
 ##In the Future
 If I had more time to work on this beyond the requirements, here are a couple of features I would love to work on:
+
     - Progressive image enhancement for image tags
     - Non-delayed(fast-click) and touch responsive carousel for mobile devices
     - Multiple video sources for IE and Firefox compatibility

@@ -39,37 +39,45 @@
     opacity: 1;
   }
 }
-@-moz-keyframes bounce-in-from-left {
+@-moz-keyframes bounce-blur-in-from-left {
   0% {
     opacity: 0;
     -moz-transform: scale(0.5) translateX(-50%);
     transform: scale(0.5) translateX(-50%);
+    filter: blur(20px);
   }
   100% {
     opacity: 1;
     -moz-transform: scale(1) translateX(0%);
     transform: scale(1) translateX(0%);
+    filter: blur(0px);
   }
 }
-@-webkit-keyframes bounce-in-from-left {
+@-webkit-keyframes bounce-blur-in-from-left {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.5) translateX(-50%);
     transform: scale(0.5) translateX(-50%);
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
   }
   100% {
     opacity: 1;
     -webkit-transform: scale(1) translateX(0%);
     transform: scale(1) translateX(0%);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 }
-@keyframes bounce-in-from-left {
+@keyframes bounce-blur-in-from-left {
   0% {
     opacity: 0;
     -moz-transform: scale(0.5) translateX(-50%);
     -ms-transform: scale(0.5) translateX(-50%);
     -webkit-transform: scale(0.5) translateX(-50%);
     transform: scale(0.5) translateX(-50%);
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
   }
   100% {
     opacity: 1;
@@ -77,6 +85,8 @@
     -ms-transform: scale(1) translateX(0%);
     -webkit-transform: scale(1) translateX(0%);
     transform: scale(1) translateX(0%);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 }
 /* Core Styles */
@@ -701,9 +711,9 @@ a {
 }
 /* line 56, ../sass/_section-why.scss */
 .section-why.visible .illustration {
-  -moz-animation: bounce-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-animation: bounce-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: bounce-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-animation: bounce-blur-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation: bounce-blur-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: bounce-blur-in-from-left 0.5s 0 1 cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;

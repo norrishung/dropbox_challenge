@@ -10,7 +10,7 @@
     }
 }
 
-@include keyframes(bounce-blur-in-from-left) {
+@include keyframes(bounce-in-from-left) {
     0% {
         opacity: 0;
         @include transform(scale(.5) translateX(-50%));
